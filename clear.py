@@ -5,6 +5,7 @@
 ###################
 
 import discord
+import os
 import asyncio
 
 client = discord.Client()
@@ -35,4 +36,4 @@ async def on_message(message):
             pass
 
 
-client.run('NzgxNzI3NjA0MTQyMTEyNzY5.X8B2kA.m6z1dZABxy12VHBBjDLwVnYGLpU')
+client.run(os.environ['token'])
